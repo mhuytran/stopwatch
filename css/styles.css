@@ -1,0 +1,101 @@
+/* Styling for the Clock */
+
+.clock-container {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+  min-height: 95vh;
+  flex-direction: column;
+  line-height: 5;
+}
+
+.clock {
+  font-size: 5rem;
+  font-family: "Rampart One", cursive;
+}
+
+/*Styling for the Buttons */
+
+.btn {
+  width: 100px;
+  font-family: "Nunito", sans-serif;
+  margin-right: 10px;
+}
+
+.toggle-dark-mode {
+  position: absolute;
+  top: 7%;
+  right: 5%;
+  width: 50px;
+}
+
+.row {
+  padding-right: 0;
+}
+
+/* Classes to Add When Switching to Dark Mode / Light Mode */
+
+.change-to-dark {
+  background-color: #423f3e;
+
+  /*423F3E #787A91 */
+}
+
+.chng-to-whitefont {
+  color: #fff;
+}
+
+.change-to-white {
+  background-color: #fff;
+}
+
+/* modifying footer */
+
+.copyright {
+  text-align: center;
+  justify-content: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 1rem;
+  font-weight: bold;
+  position: relative;
+  z-index: 1;
+  bottom:100px;
+
+}
+
+/*Media Query When Size Gets to Ipad or Phone Size */
+
+@media screen and (max-width: 700px), 
+ screen and (max-height: 800px) {
+  .clock {
+    font-size: 4rem;
+    font-family: "Rampart One", cursive;
+  }
+
+  .btn {
+    width: 70px;
+    font-size: 1rem;
+  }
+
+  .toggle-dark-mode {
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    width: 50px;
+  }
+
+  .copyright {
+    text-align: center;
+    justify-content: center;
+    font-family: "Nunito", sans-serif;
+    font-size: 1rem;
+    font-weight: bold;
+    position: relative;
+    z-index: 1;
+    bottom: 50px;
+  }
+
+}
+
+/*Accounting for the Smallest Size */
