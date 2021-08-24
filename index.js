@@ -98,11 +98,13 @@ clockHeader.textContent = defaultTime;
 // start button
 $(".start").on("click", () => {
   button = setInterval(displayTime, 1000);
+  document.querySelector(".start").disabled = true;
 });
 
 // stop button
 $(".stop").on("click", () => {
   clearInterval(button);
+  document.querySelector(".start").disabled = false;
 });
 
 // reset button
@@ -113,6 +115,8 @@ $(".reset").on("click", () => {
   clockHeader.textContent = defaultTime;
 
   clearInterval(button);
+  
+  document.querySelector(".start").disabled = false;
 });
 
 // toggle-dark mode button code w/ jQuery
